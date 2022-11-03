@@ -5,25 +5,25 @@ public class Main {
         System.out.println("Mission 7.1");
         int vkladToo=15000;
         int totalToo=0;
-        int y=0;
+        int sumIteration=0;
         while (totalToo<2_459_000)
             {
                 totalToo=(totalToo+vkladToo+(vkladToo/100));
-                y=y+1;
-                System.out.println("Месяц " + y + " сумма накоплений на банковском счете " + totalToo + " рублей" );
+                sumIteration+=1;
+                System.out.println("Месяц " + sumIteration + " сумма накоплений на банковском счете " + totalToo + " рублей" );
             }
-        System.out.println("За " + y + " месяца сумма накоплений на банковском счете " + totalToo + " рублей" );
+        System.out.println("За " + sumIteration + " месяца сумма накоплений на банковском счете " + totalToo + " рублей" );
 
 
         System.out.println(" ");
         System.out.println("Mission 7.2");
-        int b=0;
-        while (b <10)
-        { b=b+1;
-            System.out.print(" " + b);}
+        int orderNumber=0;
+        while (orderNumber < 10)
+        { orderNumber=orderNumber+1;
+            System.out.print(" " + orderNumber);}
         System.out.println();
-        for (; b > 0; b--)
-        {System.out.print(" " + b);}
+        for (; orderNumber > 0; orderNumber--)
+        {System.out.print(" " + orderNumber);}
 
         System.out.println(" ");
         System.out.println("Mission 7.3");
@@ -32,57 +32,57 @@ public class Main {
         int peopleAllUp=12_000_000;
         int humanBorn=17;
         int humanDeath=8;
-        int g=1;
-        for(;g<10;g++)
+        int year =1;
+        for(; year <10; year++)
         {
             peopleAllUp=(peopleAllUp-humanDeath)+humanBorn;
-            System.out.println("Год "+g+" численность населения "+peopleAllUp);
+            System.out.println("Год "+ year +" численность населения "+peopleAllUp);
         }
-        System.out.println("За "+g+" лет численность населения увеличилась на "+(peopleAllUp-peopleAll));
+        System.out.println("За "+ year +" лет численность населения увеличилась на "+(peopleAllUp-peopleAll));
 
 
         System.out.println(" ");
         System.out.println("Mission 7.4");
         int vkladThree=15000;
         int totalThree=0;
-        int d=0;
+        int monthVklad =0;
         while (totalThree<12_459_000)
         {
             totalThree=(totalThree+vkladThree+((vkladThree/100)*7));
-            d=d+1;
-            if(d%100==0)
-            {System.out.println("Месяц " + d + " сумма накоплений на банковском счете " + totalThree + " рублей" );}
+            monthVklad = monthVklad +1;
+            if(monthVklad %100==0)
+            {System.out.println("Месяц " + monthVklad + " сумма накоплений на банковском счете " + totalThree + " рублей" );}
         }
-        System.out.println("За " + d + " месяца сумма накоплений на банковском счете " + totalThree + " рублей" );
+        System.out.println("За " + monthVklad + " месяца сумма накоплений на банковском счете " + totalThree + " рублей" );
 
         System.out.println(" ");
         System.out.println("Mission 7.5");
         int vkladOne=15000;
         int totalOne=0;
-        int s=0;
+        int monthVkladToo=0;
         while (totalOne<12_459_000)
         {
             totalOne=(totalOne+vkladOne+((vkladOne/100)*7));
-            s=s+1;
-            if(s%6==0)
-            {System.out.println("Месяц " + s + " сумма накоплений на банковском счете " + totalOne + " рублей" );}
+            monthVkladToo=monthVkladToo+1;
+            if(monthVkladToo%6==0)
+            {System.out.println("Месяц " + monthVkladToo + " сумма накоплений на банковском счете " + totalOne + " рублей" );}
         }
-        System.out.println("За " + s + " месяца сумма накоплений на банковском счете " + totalOne + " рублей" );
+        System.out.println("За " + monthVkladToo + " месяца сумма накоплений на банковском счете " + totalOne + " рублей" );
 
 
         System.out.println(" ");
         System.out.println("Mission 7.6");
         int vkladFor=15000;
         int totalFor=0;
-        int z=0;
-        while (z<108)
+        int monthVkladThree =0;
+        while (monthVkladThree <108)
         {
             totalFor=(totalFor+vkladFor+((vkladFor/100)*7));
-            z+=1;
-            if(z%6==0)
-            {System.out.println("Месяц " + z + " сумма накоплений на банковском счете " + totalFor + " рублей" );}
+            monthVkladThree +=1;
+            if(monthVkladThree %6==0)
+            {System.out.println("Месяц " + monthVkladThree + " сумма накоплений на банковском счете " + totalFor + " рублей" );}
         }
-        System.out.println("За " + (z/12) + " лет сумма накоплений на банковском счете " + totalFor + " рублей" );
+        System.out.println("За " + (monthVkladThree /12) + " лет сумма накоплений на банковском счете " + totalFor + " рублей" );
 
         System.out.println(" ");
         System.out.println("Mission 7.7");
